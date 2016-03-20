@@ -102,7 +102,7 @@ function PopulateAlphabet () {
 	
 
     // 3. empty the alphabet div and attach the list you created to it
-    $("#alphabet").append(alphabetList);
+    $("#alphabet").empty().append(alphabetList);
 }
 
 /* 
