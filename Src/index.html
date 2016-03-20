@@ -15,6 +15,8 @@
     <meta name="dscription" content="a simple hangman game">
     <meta name="keywords" content="game,tutorial">
     <meta name="author" content="Marina">
+
+    <title>Hangman</title>
     
 
     <!-- STYLES 
@@ -26,7 +28,7 @@
     <link href="../Style/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!--[Task 2]: link the stylesheet to here -->
-
+    <link href="../Style/hangManGame.css" rel="stylesheet">
 
 
     <!-- SCRIPTS 
@@ -43,6 +45,10 @@
     </script>
 
     <!-- [Task 4]: add script tags for the .js files needed -->
+    <script type="text/javascript" src="../Script/HangManWords.js">
+    </script>
+    <script type="text/javascript" src="../Script/HangManGame.js">
+    </script>
 
   </head>
 
@@ -63,6 +69,8 @@
         </button>
 
         <!-- [Task 3.1]: add your website name in a <p> tag and give the element the class: navbar-brand -->
+        <p class="navbar-brand">Hang man</p>
+
         
 
         </div>
@@ -74,6 +82,9 @@
           	     Home is already done. Add Top Scores and Rules
           	--> 
             <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Top Score</a> </li>
+            <li> <a href="#">Rules</a> </li>
+
             
 
           </ul>
@@ -84,6 +95,32 @@
     </div>
     
     <!-- [Task 3.3]: Add the actual content + play again button -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div id="alphabet">
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div id="hangman">
+          </div>          
+        </div>
+
+      </div>
+
+      <div class="row" id="second-row">
+        <div class="col-sm-12">
+          <div id="word" class="text-center"></div>
+          <div id="final-result" class="text-center"></div>
+        </div>
+      </div>
+
+      <div id="play-again">
+        <button class="btn btn-primary" type="button">Play again</button>
+      </div>
+
+    </div>
 
   </body>
 </html>

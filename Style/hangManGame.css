@@ -1,3 +1,62 @@
+body {
+	padding-top: 20px; 
+}
+
+#play-again > button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.letter {
+	display: inline-block;
+	margin: 5px 5px 0px 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.word-character {
+	height: 40px;
+	width: 20px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.place-holder {
+	border-bottom: 1px solid black;
+}
+
+#final-result {
+	font-weight: 900;
+	font-size: 40px;
+	color: #351f39;
+}
+
+#play-again {
+	margin-top: 20px; 
+}
+
+/* the following rule has been added because without it, you will notice 
+ * that the alphabet is indented and doesn't line up with the navigation bar
+ * if that is the layout you would prefer, then omit the following rule.
+ * This happens because by default, ul has padding.
+ * We add this rule to override that
+ */ 
+#alphabet > ul {
+	padding: 0 0 0 0;  
+}
+
+#final-result {
+	font-weight: 900;
+	font-size: 40px;
+	color: #351f39;
+}
+
+
 /* Alphabet letters active and inactive
    ------------------------------------- */
 li.active {
